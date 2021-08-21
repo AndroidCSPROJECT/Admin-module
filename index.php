@@ -1,5 +1,5 @@
 <?php
-session_start();
+include('authentication.php');
 include('includes/header.php');
 ?>
     <div class="container">
@@ -48,7 +48,13 @@ include('includes/header.php');
                                        <td><?=$row['surName'];?></td>
                                        <td><?=$row['email'];?></td>
                                        <td><a href="edit-user.php?id=<?= $key ?>" class="btn btn-primary btn-sm ">Edit</a></td>
-                                       <td><a href="delete-user.php" class="btn btn-danger btn-sm ">Delete</a></td>
+                                       <td>
+                                           <form action="code.php" method="POST">
+                                               <button type="submit" name="delete_btn" value="<?=$key?>" class="btn btn-danger">Delete</button>
+                                           </form>
+                                       </td> 
+
+                                      
                                    </tr>
 
                                   <?php

@@ -31,11 +31,11 @@ include('includes/header.php');
                                     <input type="hidden" name="user_id" value="<?=$uid?>">
                                        <div class="form-group mb-3">
                              <label for="fullname">Display Name</label>
-                             <input type="text" name="display_name" value=<?=$user->displayName;?> class="form-control">
+                             <input type="text" name="display_name" value=<?=$user->displayName;?> class="form-control" placeholder="Enter your name">
                            </div>
                            <div class="form-group mb-3">
                              <label for="">Email</label>
-                             <input type="text" name="email" value=<?=$user->email;?> class="form-control">
+                             <input type="text" name="email" value=<?=$user->email;?> class="form-control" placeholder="Add email">
                            </div>
                           
                            <div class="form-group mb-3">

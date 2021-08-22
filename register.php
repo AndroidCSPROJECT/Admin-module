@@ -30,15 +30,15 @@ include('includes/header.php');
                         <form action="code.php" method="POST">
                            <div class="form-group mb-3">
                              <label for="fullname">Full Name</label>
-                             <input type="text" name="full_name" class="form-control">
+                             <input type="text" name="full_name" class="form-control" placeholder="Enter your fullname" required>
                            </div>
                            <div class="form-group mb-3">
                              <label for="">Email</label>
-                             <input type="text" name="email" class="form-control">
+                             <input type="text" name="email" class="form-control" placeholder="Enter your email" required>
                            </div>
                            <div class="form-group mb-3">
                              <label for="">Password</label>
-                             <input type="password" name="password" class="form-control">
+                             <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
                            </div>
                            <div class="form-group mb-3">
                                <button type="submit" name="register_btn" class="btn btn-primary">Register</button>

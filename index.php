@@ -29,6 +29,7 @@ include('includes/header.php');
                                   <th>First Name</th>
                                   <th>Surname</th>
                                   <th>Email</th>
+                                  
                                   <th>Edit</th>
                                   <th>Delete</th>
                               </tr>

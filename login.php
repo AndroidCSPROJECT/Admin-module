@@ -20,9 +20,7 @@ include('includes/header.php');
                     <div class="card-header">
                         <h4>
                             Sign In
-                            <a href="index.php" class="btn btn-danger float-end">
-                                Back
-                            </a>
+                           
                         </h4>
                     </div>
                     <div class="card-body">
@@ -30,11 +28,11 @@ include('includes/header.php');
                           
                            <div class="form-group mb-3">
                              <label for="">Email</label>
-                             <input type="text" name="email" class="form-control">
+                             <input type="text" name="email" class="form-control" placeholder="Enter your email" required>
                            </div>
                            <div class="form-group mb-3">
                              <label for="">Password</label>
-                             <input type="password" name="password" class="form-control">
+                             <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
                            </div>
                            <div class="form-group mb-3">
                                <button type="submit" name="login_btn" class="btn btn-primary">Login</button>

@@ -1,4 +1,6 @@
 <?php
+
+include('admin_auth.php');
 include('includes/header.php');
 ?>
     <div class="container">

@@ -9,7 +9,7 @@ include('includes/header.php');
                    <div class="card-body">
                        <h4>Total Number of Records:
                          <?php
-                         $ref_table='Users';
+                         $ref_table='ParkingLocation';
                          $total_count = $database->getReference($ref_table)->getSnapshot()->numChildren();
                          echo $total_count;
                          ?>
@@ -29,10 +29,8 @@ include('includes/header.php');
                 <div class="card">
                     <div class="card-header">
                         <h4>
-                            Registered Users
-                            <a href="add-contact.php" class="btn btn-primary float-end">
-                                Add User
-                            </a>
+                            Saved Parking Spaces
+                           
                         </h4>
                     </div>
                     <div class="card-body">
@@ -40,18 +38,22 @@ include('includes/header.php');
                           <thead>
                               <tr>
                                   <th>Serial Number</th>
-                                  <th>First Name</th>
-                                  <th>Surname</th>
-                                  <th>Email</th>
+                                  <th>Address</th>
+                                  <th>Parking Space Name</th>
+                                  <th>longitude</th>
+                                  <th>latitude</th>
+                                   
+                                  <th>Rating</th>
+                                  <th>Total Ratings</th>
+
                                   
-                                  <th>Edit</th>
-                                  <th>Delete</th>
+                                  
                               </tr>
                           </thead>
                           <tbody>
                               <?php
                                include('dbcon.php');
-                               $ref_table="Users";
+                               $ref_table="ParkingLocation";
                                $fetchData = $database->getReference($ref_table)->getValue();
                                if($fetchData>0){
                                    $i=0;
@@ -59,15 +61,13 @@ include('includes/header.php');
                                        ?>
                                    <tr>
                                        <td><?=$i++;?></td>
-                                       <td><?=$row['firstName'];?></td>
-                                       <td><?=$row['surName'];?></td>
-                                       <td><?=$row['email'];?></td>
-                                       <td><a href="edit-user.php?id=<?= $key ?>" class="btn btn-primary btn-sm ">Edit</a></td>
-                                       <td>
-                                           <form action="code.php" method="POST">
-                                               <button type="submit" name="delete_btn" value="<?=$key?>" class="btn btn-danger">Delete</button>
-                                           </form>
-                                       </td> 
+                                       <td><?=$row['address'];?></td>
+                                       <td><?=$row['name'];?></td>
+                                       <td><?=$row['lng'];?></td>
+                                       <td><?=$row['lat'];?></td>
+                                       <td><?=$row['rating'];?></td>
+                                       <td><?=$row['totalRating'];?></td>
+                                     
 
                                       
                                    </tr>

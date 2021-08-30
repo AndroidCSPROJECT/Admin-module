@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Parking-Finder-Web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

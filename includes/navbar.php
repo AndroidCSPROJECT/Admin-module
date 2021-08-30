@@ -20,6 +20,9 @@
           <a class="nav-link " aria-current="page" href="index.php">Stored Users</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="parkingspaces.php">Parking Spaces</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link " aria-current="page" href="add-contact.php">Add User</a>
         </li>
       

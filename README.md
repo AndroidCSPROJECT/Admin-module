@@ -49,7 +49,9 @@ This is where parking apps come into the role. This apps perform the cumbersome 
 - Heroku
   - Deploying the application
 
-# How to Use the Project
+## Contributors
+   John Munene Ndwiga - https://github.com/Mun3ne
+   Andy Omondi        - https://github.com/AndyOmondi17
 
 
 

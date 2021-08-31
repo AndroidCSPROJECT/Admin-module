@@ -154,24 +154,35 @@ if(isset($_POST['register_btn'])){
     $fullname=$_POST['full_name'];
     $email=$_POST['email'];
     $password=$_POST['password'];
+    //here we verify the registration email
+    $actionCodeSettings = [
+        'continueUrl' => 'http://parkingfinderapp.herokuapp.com/login.php',
+        'handleCodeInApp' => false,
+        
+    ];
+    $link = $auth->getSignInWithEmailLink($email, $actionCodeSettings);
+    
+    
 
+    //End of email verification
     $userProperties = [
         'email' => $email,
-        'emailVerified' => false,
+        'emailVerified' =>true,
        
         'password' => $password,
         'displayName' =>  $fullname,
        
         'disabled' => false,
     ];
-    $createdUser = $auth->createUser($userProperties);    
+    $createdUser=$auth->sendSignInWithEmailLink($email, $actionCodeSettings);  
+   // $createdUser = $auth->createUser($userProperties);    
     if( $createdUser){
-        $_SESSION['status']="Registered successfully!";
-        header('Location:register.php');
+        $_SESSION['status']="Registered successfully! Please Login to continue";
+        header('Location:login.php');
         exit();
     }
     else{
-        $_SESSION['status']="Failed to registered!";
+        $_SESSION['status']="Failed to register!";
         header('Location:register.php');
         exit();
     }

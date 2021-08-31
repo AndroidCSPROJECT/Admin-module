@@ -27,7 +27,7 @@ This is where parking apps come into the role. This apps perform the cumbersome 
 
 - Php
    - Create
-   [<img src="readmeuploads/Capture_reg.PNG" width="40px"/>]
+     -<img src="readmeuploads/Capture_reg.PNG"/>
    - Read
    - Update
    - Delete

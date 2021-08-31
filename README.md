@@ -8,5 +8,49 @@ This is where parking apps come into the role. This apps perform the cumbersome 
 ### Note
  This is the administration module of the parking spot finder application. If you are interested in the client application, visit this link : https://github.com/AndroidCSPROJECT/ParkingFinder
 
- ## Description
- 
+ ## Project Description 
+ The administration module enables the administrator to set up users management which allows users to be set up with definable access level/roles. The administrator can also set up overall system security settings such as inactivating or locking out accounts.
+
+ ## Technologies Used
+
+ - Html
+   - Sematic elements, tags
+   - Attributes
+   - Best practices: indentation, file naming conventions and directory structure.
+
+- CSS
+   - Order of importance
+   - Classes vs Ids
+   - Selectors
+   - Typography
+   - Color: hexadecimal and RGB
+
+- Php
+   - Create
+   - Read
+   - Update
+   - Delete
+
+- Firebase
+   - Firebase Authentication
+   - Realtime database
+   - Firebase Admin Sdk
+
+- Git $Git Workflow
+  - Git clone
+  - Git pull
+  - Git push
+  - Git remote add
+  - Git commit
+
+- Github
+  - Creating a repository
+
+- Heroku
+  - Deploying the application
+
+# How to Use the Project
+
+
+
+  

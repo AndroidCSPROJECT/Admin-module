@@ -31,12 +31,12 @@ This is where parking apps come into the role. This apps perform the cumbersome 
      
 =======
      - <img src="readmeuploads/Capture_reg.PNG" height="500px" width="500px"/>
-    if(isset($_POST['register_btn'])){
-    $fullname=$_POST['full_name'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-    //here we verify the registration email
-    $actionCodeSettings = [
+       if(isset($_POST['register_btn'])){
+       $fullname=$_POST['full_name'];
+      $email=$_POST['email'];
+      $password=$_POST['password'];
+      //here we verify the registration email
+      $actionCodeSettings = [
         'continueUrl' => 'http://localhost/Parking%20Finder/Parking-Finder-Web/login.php',
         'handleCodeInApp' => false,
         

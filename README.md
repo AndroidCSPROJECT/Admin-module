@@ -27,34 +27,9 @@ This is where parking apps come into the role. This apps perform the cumbersome 
 
 - Php
    - Create
-<<<<<<< HEAD
-     
-=======
+
      - <img src="readmeuploads/Capture_reg.PNG" height="500px" width="500px"/>
-    if(isset($_POST['register_btn'])){
-    $fullname=$_POST['full_name'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-    //here we verify the registration email
-    $actionCodeSettings = [
-        'continueUrl' => 'http://localhost/Parking%20Finder/Parking-Finder-Web/login.php',
-        'handleCodeInApp' => false,
-        
-    ];
-    $link = $auth->getSignInWithEmailLink($email, $actionCodeSettings);
-    //End of email verification
-    $userProperties = [
-    'email' => $email,
-    'emailVerified' =>true,
-       
-    'password' => $password,
-    'displayName' =>  $fullname,
-       
-    'disabled' => false,
-    ];
-    $createdUser=$auth->sendSignInWithEmailLink($email, $actionCodeSettings);  
-   $createdUser = $auth->createUser($userProperties);  
->>>>>>> 4115cffe307bd7fcbe80d75e04f8f079d21586f3
+  
    - Read
    - Update
    - Delete

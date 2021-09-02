@@ -156,16 +156,13 @@ if(isset($_POST['register_btn'])){
     $password=$_POST['password'];
     //here we verify the registration email
     $actionCodeSettings = [
-        'continueUrl' => 'http://localhost/Parking%20Finder/Parking-Finder-Web/login.php',
+       // 'continueUrl' => 'http://localhost/Parking%20Finder/Parking-Finder-Web/login.php',
+        'continueUrl' => 'http://parkingfinderapp.herokuapp.com/login.php',
         'handleCodeInApp' => false,
         
     ];
     $link = $auth->getSignInWithEmailLink($email, $actionCodeSettings);
     
-
-    
-    
-
     //End of email verification
     $userProperties = [
         'email' => $email,
